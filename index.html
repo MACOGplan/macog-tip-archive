@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ This line enables mobile responsiveness -->
   <title>MACOG TIP Archive</title>
   <style>
+    div.sticky {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #ffffff;
@@ -95,7 +103,7 @@
 <h1>Transportation Improvement Program (TIP) Archive</h1>
 
 <!-- Filter dropdown ABOVE the table -->
-<div style="text-align: center; margin-bottom: 20px;">
+<div class="sticky">
   <label for="yearFilter">Filter by Year:</label>
   <select id="yearFilter" onchange="filterTable()">
     <option value="all">Show All</option>
